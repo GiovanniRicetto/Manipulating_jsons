@@ -68,6 +68,6 @@ module JsonC
         file = File.read('json/c.json')
         parsed = JSON.parse(file)
         parsed = parsed[0]["trainingScheduleAthleteEvent"]
-        parsed_day15 = parsed.select {|x| x["day"] == 15}        
+        parsed_day15 = parsed.any? {|x| x["day"] == 15}
     end
 end

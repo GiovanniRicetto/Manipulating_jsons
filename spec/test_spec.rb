@@ -53,7 +53,7 @@ describe 'Validating JSONs' do
             expect(readJsonC1).to eq([2, 23, 25, 29, 31])
         end
 
-        it 'Day 29 - Night', :teste2 do
+        it 'Day 29 - Night' do
             readJsonC2
             expect(readJsonC2).to eq(
                 [{"day"=>29,
@@ -74,9 +74,9 @@ describe 'Validating JSONs' do
                 "totalWeekEvents"=>1}])
         end
 
-        it 'Has something at day 15?', :teste3 do
+        it 'Has something at day 15?' do
             readJsonC3
-            expect(readJsonC3).to eq([])
+            expect(readJsonC3).to eq(false)
         end
 
     end
