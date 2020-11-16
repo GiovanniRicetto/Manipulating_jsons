@@ -31,18 +31,18 @@ describe 'Validating JSONs' do
             expect(readJsonB1).to eq([3, 6, 9, 12, 15, 6, 9])
         end
 
-        it 'Odd Numbers test' do
+        it 'Even Numbers test' do
             readJsonB2
             expect(readJsonB2).to eq([2, 4, 2])
         end
 
-        it 'Multiply by 3 test' do
-            readJsonB1
+        it 'Odd by 3 test' do
+            readJsonB3
             expect(readJsonB3).to eq([1, 3, 5, 3])
         end
 
-        it 'Multiply by 3 test' do
-            readJsonB1
+        it 'Bigger than 3' do
+            readJsonB4
             expect(readJsonB4).to eq([4, 5])
         end   
     end

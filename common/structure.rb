@@ -2,6 +2,7 @@ require 'json'
 require 'pry'
 
 module JsonA
+    
     def readJsonA1
         file = File.read('json/a.json')
         parsed = JSON.parse(file)
@@ -18,7 +19,7 @@ module JsonA
     def readJsonA3
         file = File.read('json/a.json')
         parsed = JSON.parse(file)
-        parsed_nil_user = parsed.map {|user| user["user"] == ""}.include?(true)
+        parsed_nil_user = parsed.map {|user| user["user"] == ""}.include?(true) #pode usar .any?
     end
 end
 
